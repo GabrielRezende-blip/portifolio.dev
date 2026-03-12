@@ -322,9 +322,9 @@ h1 {
 
 .btn:hover { transform: translateY(-2px); }
 .bp { background: var(--acc); color: #000; }
-.bg { background: transparent; color: var(--txt); border: 2px solid var(--brd); }
-.bg:hover { border-color: var(--acc); color: var(--acc); }
-
+.bg {   background: var(--acc); color: #000; border: 2px solid var(--brd); width: 80%;   justify-content: center;}
+.bgt { background: transparent; color: var(--txt); border: 2px solid var(--brd); }
+.bgt:hover { border-color: var(--acc); color: var(--acc); }
 /* Indicador de scroll */
 .hsc {
   position: absolute;
@@ -559,6 +559,10 @@ h2 {
 
 .tt { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .td { font-family: var(--mono); font-size: 12px; color: var(--mut); line-height: 1.7; }
+.cv-btn {
+  margin-top: 36px;
+  gap: 10px;
+}
 
 /* ---------- PROJETOS ---------- */
 #projects { background: var(--bg); }
@@ -780,10 +784,13 @@ h2 {
 .fg #mensagem { min-height: 110px; }
 
 .sbtn {
+  width: 100%;
+  margin-top: 25px;
   cursor: none;
   border: none;
-  background: var(--acc);
-  color: #000;
+  background: transparent; 
+  color: var(--txt); 
+  border: 2px solid gray; 
   font-family: var(--mono);
   font-size: 12px;
   font-weight: 700;
@@ -798,7 +805,7 @@ h2 {
   transition: transform .2s;
 }
 
-.sbtn:hover { transform: translateY(-2px); }
+.sbtn:hover { transform: translateY(-2px); border-color: var(--acc); color: var(--acc); } 
 
 /* ---------- RODAPÉ ---------- */
 footer {
@@ -854,10 +861,6 @@ footer span { color: var(--acc); }
   body, button, a { cursor: auto; }
 }
 
-/* =============================================
-   GABRIEL TEIXEIRA — OBRIGADO
-   obrigado.css
-   ============================================= */
 
 /* ---------- WRAPPER ---------- */
 .ty-wrapper {
